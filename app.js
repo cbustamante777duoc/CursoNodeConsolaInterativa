@@ -2,7 +2,6 @@ require('colors');
 const { inquirerMenu } = require('./helpers/inquirer');
 
 
-
     console.clear();
 
 const main = async () =>{
@@ -12,7 +11,7 @@ const main = async () =>{
     let opt = '';
     
     do {
-        //espera lo que escriba el usuario
+        //espera lo que escriba el usuario y lo muestra en pantalla
         opt = await inquirerMenu();
         console.log({opt});
 
